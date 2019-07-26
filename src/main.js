@@ -3,14 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import vuex from 'vuex'
-Vue.use(vuex)
-var store = new vuex.Store({// store对象
-  state: {
-    show: 'hello vuex'
-  }
+// vuex
+import store from './store'
 
-})
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

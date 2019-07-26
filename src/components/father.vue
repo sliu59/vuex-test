@@ -2,15 +2,18 @@
   <div>
     <div>HelloWorld{{fromson}}</div>
     <son :msg="msg" @getFromson="fatherGet"></son>
+    <brother></brother>
   </div>
 
 </template>
 <script>
 import Son from './son.vue'
+import Brother from './brother'
 
 export default {
   components: {
-    son: Son
+    son: Son,
+    brother: Brother
   },
   data () {
     return {
@@ -23,5 +26,6 @@ export default {
       this.fromson = data
     }
   }
+
 }
 </script>
